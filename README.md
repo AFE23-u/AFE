@@ -31,7 +31,7 @@ cd AFE-main/AFE
 rm -r yn_cup_res
 mkdir yn_cup_res
 cp -r  ../../trained_model/AFE/model.* yn_cup_res
-python main.py --infer=True
+python3 main.py --infer=True
 ```
 
 ## 模型验证
@@ -41,8 +41,8 @@ Run the following code
 ```
 cp yn_cup_res/result.json ../eval_tools/prediction/
 cd ../eval_tools/eval
-python eval.py
-python eval_gleu.py
-python eval_edit_distance.py
+python3 eval.py
+python3 eval_gleu.py
+python3 eval_edit_distance.py
 ```
 
