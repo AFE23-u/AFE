@@ -28,6 +28,7 @@ If we use our trained model for inference, run the following code
 
 ```
 cd AFE-main/AFE
+rm -r yn_cup_res
 mkdir yn_cup_res
 cp -r  ../../trained_model/AFE/model.* yn_cup_res
 python main.py --infer=True
