@@ -1,6 +1,6 @@
 ## AFE
 
-This is the replication package for AFE-CUP.
+This is the replication package for "AFE-CUP: Align and Fuse Encoders for Just-In-Time Comment Updating"
 
 ## Download
 
