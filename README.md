@@ -24,7 +24,7 @@ cd AFE-main/AFE
 python3 main.py
 ```
 
-If we use our trained model for inference, run the following code
+If use our trained model for inference, run the following code
 
 ```
 cd AFE-main/AFE
