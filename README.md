@@ -1,5 +1,47 @@
-# AFE
+## AFE
 
-# Download
+This is the replication package for AFE-CUP.
 
-https://drive.google.com/drive/folders/1Mz_hbXGjDwvdcMubVeiE3-ikrhOXsPiR?usp=sharing
+## Download
+
+Please download AFE-CUP and baselines datasets and trained models here: https://drive.google.com/drive/folders/1Mz_hbXGjDwvdcMubVeiE3-ikrhOXsPiR?usp=sharing
+
+
+After downloading, please place the downloaded folder and replication package in the same level directory, and then execute the following code
+
+```
+mkdir AFE-main/AFE/data
+mkdir AFE-main/AFE/data/yn_updater_dataset
+cp -r dataset/AFE-CUP/* AFE-main/AFE/data/yn_updater_dataset
+```
+
+## 模型训练和推理
+
+To perform model training and inference, run the following code
+
+```
+cd AFE-main/AFE
+python3 main.py
+```
+
+If we use our trained model for inference, run the following code
+
+```
+cd AFE-main/AFE
+mkdir yn_cup_res
+cp -r  ../../trained_model/AFE/model.* yn_cup_res
+python main.py --infer=True
+```
+
+## 模型验证
+
+Run the following code
+
+```
+cp yn_cup_res/result.json ../eval_tools/prediction/
+cd ../eval_tools/eval
+python eval.py
+python eval_gleu.py
+python eval_edit_distance.py
+```
+
