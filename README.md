@@ -15,7 +15,7 @@ mkdir AFE-main/AFE/data/yn_updater_dataset
 cp -r dataset/AFE-CUP/* AFE-main/AFE/data/yn_updater_dataset
 ```
 
-## Train and infer
+## Train and Infer
 
 To perform model training and inference, run the following code
 
