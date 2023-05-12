@@ -15,7 +15,7 @@ mkdir AFE-main/AFE/data/yn_updater_dataset
 cp -r dataset/AFE-CUP/* AFE-main/AFE/data/yn_updater_dataset
 ```
 
-## 模型训练和推理
+## Train and infer
 
 To perform model training and inference, run the following code
 
@@ -34,7 +34,7 @@ cp -r  ../../trained_model/AFE/model.* yn_cup_res
 python3 main.py --infer=True
 ```
 
-## 模型验证
+## Evalaute
 
 Run the following code
 
